@@ -1,0 +1,16 @@
+$TTL 60
+@                               IN SOA          ns1.osci.io. hostmaster.osci.io. (
+                                                2021012900      ; serial (YYYYMMDDRR)
+                                                3600            ; Refresh
+                                                1800            ; Retry
+                                                604800          ; Timeout
+                                                86400 )         ; Negative answer TTL
+                                IN NS           ns1.osci.io.
+                                IN NS           ns2.osci.io.
+                                IN NS           ns3.osci.io.
+
+
+taiste         IN A   8.43.85.105
+taiste2        IN A   8.43.85.106
+taiste3        IN A   8.43.85.108
+
