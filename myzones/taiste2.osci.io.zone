@@ -1,6 +1,6 @@
 $TTL 60
 @                               IN SOA          ns1.osci.io. hostmaster.osci.io. (
-                                                2021012900      ; serial (YYYYMMDDRR)
+                                                2021012901      ; serial (YYYYMMDDRR)
                                                 3600            ; Refresh
                                                 1800            ; Retry
                                                 604800          ; Timeout
