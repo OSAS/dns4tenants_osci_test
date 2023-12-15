@@ -2,6 +2,7 @@
 name: Zones check
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -15,8 +16,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # first load the base branch
       - uses: actions/checkout@v4
         with:
+          ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 0
+      # and then the PR commit
+      - uses: actions/checkout@v4
       - uses: OSAS/dns4tenants-validation@main
 
